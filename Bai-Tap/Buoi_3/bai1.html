@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 1 - Form đăng ký</title>
+  <style>
+    input[type="text"], input[type="email"], input[type="password"] {
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+    input[type="email"] { border-color: #1976d2; }
+    input[type="password"] { background-color: #fff8c6; }
+    input:required { border: 3px solid #d32f2f; }
+    a[href^="https://"] { color: #228b22; }
+    a[href^="http://"] { color: #d32f2f; text-decoration: line-through; }
+    a[href$=".pdf"] { color: #f57c00; font-weight: bold; }
+    a[href*="gmail"] { font-style: italic; }
+    button[type="submit"] { background: #1976d2; color: #fff; }
+    button[type="reset"] { background: gray; }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Đăng ký tài khoản</h2>
+    <input type="text" name="fullname" placeholder="Họ và tên">
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Mật khẩu">
+    <input type="text" name="phone" placeholder="Số điện thoại" required>
+    <input type="checkbox" id="agree"> <label for="agree">Tôi đồng ý điều khoản</label>
+    <p>
+      Tham khảo:
+      <a href="https://google.com">Google</a> |
+      <a href="http://example.com">Trang không bảo mật</a> |
+      <a href="tai-lieu.pdf">Tài liệu PDF</a> |
+      <a href="mailto:admin@gmail.com">Liên hệ</a>
+    </p>
+    <button type="submit">Đăng ký</button>
+    <button type="reset">Nhập lại</button>
+  </form>
+</body>
+</html>

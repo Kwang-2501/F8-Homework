@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 2 - Menu và danh sách</title>
+  <style>
+    nav a:first-child { font-weight: bold; }
+    nav a:last-child { color: #d32f2f; }
+    nav a:not(:last-child)::after { content: " | "; }
+    nav a:hover { background: #1d3557; color: #fff; }
+    ul { list-style: none; }
+    li::before { content: "✔ "; }
+    li:nth-child(odd) { background: #f0f0f0; }
+    li:nth-child(3) { color: #1976d2; font-weight: bold; }
+    li:hover { font-style: italic; }
+    p::first-letter { color: #d32f2f; font-size: 3em; }
+    p::first-line { text-transform: uppercase; }
+    input::placeholder { color: #aaa; font-style: italic; }
+    input:focus { border-color: #1976d2; outline: none; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Tin tức</a>
+    <a href="#">Liên hệ</a>
+  </nav>
+  <h2>Danh sách học viên</h2>
+  <ul>
+    <li>Nguyễn Văn A</li>
+    <li>Trần Thị B</li>
+    <li>Lê Văn C</li>
+    <li>Phạm Thị D</li>
+    <li>Hoàng Văn E</li>
+    <li>Vũ Thị F</li>
+  </ul>
+  <p>Lập trình web là một kỹ năng rất quan trọng trong thời đại công nghệ hiện nay.</p>
+  <input type="text" placeholder="Tìm kiếm...">
+</body>
+</html>
